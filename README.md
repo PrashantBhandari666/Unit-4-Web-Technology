@@ -855,13 +855,13 @@ This model of a modern web application design has quite an interesting feature: 
 
 To operate this model, developers need at least two web servers. It’s essential for making the model more reliable because if one server goes down, another one will take charge. So, in such a failure, all the requests will automatically go to the new server, without affecting the web app’s functioning. Thus, this model is more reliable than a single server. However, if something happens to the database, the app will crash.
 
-### Multiple Web Server, Multiple Databases
+#### Multiple Web Server, Multiple Databases
 
 This is the most efficient and reliable web application model. The reason is that both servers and databases have multiple substitutions. So, in case of failure, there are two way-outs: to store data in all the accessible databases or distribute it evenly among them. Anyway, the web site will be safe and sound.
 
 However, if you decide to distribute the data, it may happen that some data may become unavailable. But this scenario describes a database’s crush.
 
-### Application Services
+#### Application Services
 
 Above, we mentioned three so-called “Monolithic” models due to their server’s rigid and stable nature. In contrast, application services (microservices and serverless) tend to be agile since they simplify upgrades and scaling. Applying this model allows splitting up web servers into smaller parts: ‘services’ in microservices and ‘functions’ in serverless. Thus, modifying and scaling independently using each of them is easier.
 
